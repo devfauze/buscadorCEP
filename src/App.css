@@ -28,7 +28,7 @@
   border-radius: 30px;
   width: 13rem;
   height: 30px;
-  transition: all ease-in-out .5s;
+  transition: all 0.5s ease-in-out;
   margin-right: -2rem;
   position: absolute;
   top: 16%;
@@ -37,9 +37,6 @@
 
 .search__input:hover, .search__input:focus {
   box-shadow: 0 0 1em #00000013;
-}
-
-.search__input:focus {
   outline: none;
   background-color: #f0eeee;
 }
@@ -58,22 +55,21 @@ button {
   display: inline-block;
   cursor: pointer;
   outline: none;
-  border: 0;
+  border: none;
   vertical-align: middle;
-  text-decoration: none;
   background: transparent;
   padding: 0;
   font-size: inherit;
   font-family: inherit;
   left: 70%;
- }
- 
- button.find-cep {
+}
+
+button.find-cep {
   width: 12rem;
   height: auto;
- }
- 
- button.find-cep .circle {
+}
+
+button.find-cep .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -82,26 +78,25 @@ button {
   height: 3rem;
   background: #474747;
   border-radius: 1.625rem;
- }
- 
- button.find-cep .circle .icon {
+}
+
+button.find-cep .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
- }
- 
- button.find-cep .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+button.find-cep .circle .icon.arrow {
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
- }
- 
- button.find-cep .circle .icon.arrow::before {
+}
+
+button.find-cep .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -111,9 +106,9 @@ button {
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
- }
- 
- button.find-cep .button-text {
+}
+
+button.find-cep .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 10;
@@ -127,17 +122,17 @@ button {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
- }
- 
- button:hover .circle {
+}
+
+button:hover .circle {
   width: 100%;
- }
- 
- button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
- }
- 
- button:hover .button-text {
+}
+
+button:hover .button-text {
   color: #fff;
- }
+}
